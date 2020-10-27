@@ -9,7 +9,17 @@ package tutorial.pkg4.week.pkg5;
  *
  * @author USER
  */
-public class CashPayment 
-{
+public class CashPayment extends Payment {    
+
+    public CashPayment(double amount) 
+    {
+        super(amount);
+    }
+
+    @Override
+    public String toString() {
+        return "CashPayment, " + "amount paid is : " + amount ;
+    }
+    
     
 }
